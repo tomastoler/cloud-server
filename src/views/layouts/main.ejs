@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Server</title>
+</head>
+<body>
+
+    <% if(!user) { %>
+        <a href="/">home</a>
+        <a href="/signin">signin</a>
+        <a href="/signup">signup</a>
+    <% } else{  %>
+        <a href="/logout">logout</a>
+        <a href="/profile">profile</a>
+        <a href="/upload">upload</a>
+        <a href="/my_files">my_files</a>
+    <% } %>
+    
+    <%- body -%>
+
+</body>
+</html>

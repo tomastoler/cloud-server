@@ -1,0 +1,9 @@
+<% layout('layouts/main.ejs') -%>
+<h1>my-files page</h1>
+
+<% for(let file of files){ %>
+    <a href="/my_files/<%=file%>" target="blank"> <%= file %> </a>
+    <br>
+<% } %>
+
+
